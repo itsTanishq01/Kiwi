@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 39% 91%; /* Converts #e3f1e0 to HSL */
+    --foreground: 122 39% 12%; /* Dark kiwi green text */
+    
+    --primary: 122 39% 42%; /* Bright kiwi green */
+    --primary-foreground: 0 0% 98%; /* Light text on primary */
+
+    --border: 122 39% 20%;
+    --input: 122 39% 20%;
+    --ring: 122 39% 50%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground bg-background;
+  }
+
+  .card, .bg-card {
+    @apply bg-white;
+  }
+}
